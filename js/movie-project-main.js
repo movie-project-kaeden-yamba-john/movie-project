@@ -11,8 +11,10 @@ import {displayMovie} from "./movie-project-functions.js";
     console.log(tmdbMovieData)
 
 })();
+const movieList = document.getElementById('movie-list');
+const addMovieForm = document.getElementById('add-movie-form');
 
-
+displayMovies(movies)
 // Add an event listener to the form to add a new movie
 addMovieForm.addEventListener('submit', event => {
     event.preventDefault();
@@ -44,3 +46,5 @@ movieList.addEventListener('click', event => {
         }
     }
 });
+
+displayMovie()
