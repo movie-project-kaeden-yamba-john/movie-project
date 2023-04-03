@@ -1,4 +1,4 @@
-import * as movieMain from "./movie-project-functions";
+import * as movieMain from "./movie-project-functions.js";
 
 (async () => {
     let movieData = await movieMain.movieData();
