@@ -1,15 +1,5 @@
 import {OMDB_API, TMDB_API} from "./keys.js"
 
-// Pull movie data from API for one particular movie
-// export async function movieData() {
-//     try {
-//         const response = await fetch(`http://www.omdbapi.com/?i=tt0068646&apikey=${OMDB_API}`);
-//         const data = await response.json();
-//         return data;
-//     } catch(error) {
-//         console.log(error);
-//     }
-// }
 
 
 export async function tmdbMovieData  () {
@@ -22,7 +12,7 @@ export async function tmdbMovieData  () {
     }
 }
 
-/ Function to display movies on the page
+// Function to display movies on the page
 export function displayMovies(movies) {
     movieList.innerHTML = '';
 
