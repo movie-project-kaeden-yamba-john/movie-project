@@ -1,7 +1,6 @@
-import {OMDB_API, TMDB_API} from "./keys.js"
+import {TMDB_API} from "./keys.js"
 
-
-
+// Fetches data from TMDB for popular movies on a specific date (today)
 export async function tmdbMovieData  () {
     try {
         const response = await fetch (`https://api.themoviedb.org/3/movie/now_playing?api_key=${TMDB_API}&language=en-US&page=1`);
@@ -9,6 +8,17 @@ export async function tmdbMovieData  () {
         return data;
     } catch(error) {
         console.log (error)
+    }
+}
+
+// Pulls only the results, array of movies, from the data above
+export async function getMovieArray () {
+    try {
+        const response = await fetch (`https://api.themoviedb.org/3/movie/now_playing?api_key=${TMDB_API}&language=en-US&page=1`);
+        const data = await response.json();
+        return data.results;
+    } catch (error) {
+        return error
     }
 }
 

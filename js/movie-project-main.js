@@ -9,6 +9,8 @@ import {displayMovie} from "./movie-project-functions.js";
     // Pulls an array of movies, with each being objects, from  the TMDB Database;
     let tmdbMovieData = await movieMain.tmdbMovieData();
     console.log(tmdbMovieData)
+    let movieDataArray = await movieMain.getMovieArray();
+    console.log(movieDataArray)
 
 })();
 
@@ -21,7 +23,7 @@ addMovieForm.addEventListener('submit', event => {
     const rating = document.getElementById('rating').value;
     const genre = document.getElementById('genre').value;
 
-    addMovie(title, rating, genre);
+    movieMain.addMovie(title, rating, genre);
 
     addMovieForm.reset();
 });
@@ -35,12 +37,12 @@ movieList.addEventListener('click', event => {
         const title = prompt('Enter the new title:');
         const rating = prompt('Enter the new rating:');
         const genre = prompt('Enter the new genre:');
-        updateMovie(id, title, rating, genre);
+        movieMain.updateMovie(id, title, rating, genre);
     } else if (target.classList.contains('delete-button')) {
         const id = target.dataset.id;
         const confirmDelete = confirm('Are you sure you want to delete this movie?');
         if (confirmDelete) {
-            removeMovie(id);
+            movieMain.removeMovie(id);
         }
     }
 });
