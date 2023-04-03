@@ -80,7 +80,7 @@ export function updateMovie(id, title, rating, genre) {
 
 // Fetch the list of movies from the database and display them on the page
 export function displayMovie() {
-    fetch('./db.json')
+    fetch(' http://localhost:3000/movies/')
         .then(response => response.json())
         .then(data => {
             console.log('Movies:', data.movies);
