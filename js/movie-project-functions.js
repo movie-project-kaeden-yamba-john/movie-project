@@ -9,3 +9,4 @@ export async function movieData() {
         console.log(error);
     }
 }
+
