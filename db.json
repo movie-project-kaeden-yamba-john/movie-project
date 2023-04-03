@@ -1,0 +1,28 @@
+{
+  "movies": [
+    {
+      "id": "1",
+      "title": "The Godfather",
+      "rating": "9.2",
+      "genre": "Crime, Drama"
+    },
+    {
+      "id": "2",
+      "title": "The Shawshank Redemption",
+      "rating": "9.3",
+      "genre": "Drama"
+    },
+    {
+      "id": "3",
+      "title": "The Dark Knight",
+      "rating": "9.0",
+      "genre": "Action, Crime, Drama"
+    },
+    {
+      "id": "4",
+      "title": "Forrest Gump",
+      "rating": "8.8",
+      "genre": "Comedy, Drama, Romance"
+    }
+  ]
+}

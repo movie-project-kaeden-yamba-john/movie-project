@@ -13,7 +13,22 @@
     <div class="container">
         <div class="row">
             <div class="column">
+                <h1>Movie Database</h1>
 
+                <form id="add-movie-form">
+                    <label for="title">Title:</label>
+                    <input type="text" id="title" name="title">
+                    <br>
+                    <label for="rating">Rating:</label>
+                    <input type="number" id="rating" name="rating">
+                    <br>
+                    <label for="genre">Genre:</label>
+                    <input type="text" id="genre" name="genre">
+                    <br>
+                    <button type="submit">Add Movie</button>
+                </form>
+
+                <div id="movie-list"></div>
             </div>
         </div>
     </div>
