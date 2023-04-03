@@ -16,7 +16,7 @@ import {displayMovie} from "./movie-project-functions.js";
 const movieList = document.getElementById('movie-list');
 const addMovieForm = document.getElementById('add-movie-form');
 
-displayMovies(movies)
+displayMovies()
 // Add an event listener to the form to add a new movie
 addMovieForm.addEventListener('submit', event => {
     event.preventDefault();
