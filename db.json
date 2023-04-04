@@ -1,124 +1,124 @@
 {
   "movies": [
-{
-  "id": 1,
-  "title": "The Shawshank Redemption",
-  "rating": 9.3,
-  "genre": "Drama"
-},
-{
-"id": 2,
-"title": "The Godfather",
-"rating": 9.2,
-"genre": "Crime"
-},
-{
-"id": 3,
-"title": "Pulp Fiction",
-"rating": 8.9,
-"genre": "Crime"
-},
-{
-"id": 4,
-"title": "The Dark Knight",
-"rating": 9.0,
-"genre": "Action"
-},
-{
-"id": 5,
-"title": "Forrest Gump",
-"rating": 8.8,
-"genre": "Drama"
-},
-{
-"id": 6,
-"title": "Inception",
-"rating": 8.8,
-"genre": "Sci-Fi"
-},
-{
-"id": 7,
-"title": "The Matrix",
-"rating": 8.7,
-"genre": "Sci-Fi"
-},
-{
-"id": 8,
-"title": "Avengers: Endgame",
-"rating": 8.4,
-"genre": "Action"
-},
-{
-"id": 9,
-"title": "The Godfather: Part II",
-"rating": 9.0,
-"genre": "Crime"
-},
-{
-"id": 10,
-"title": "Schindler's List",
-"rating": 8.9,
-"genre": "Drama"
-},
-{
-"id": 11,
-"title": "Fight Club",
-"rating": 8.8,
-"genre": "Drama"
-},
-{
-"id": 12,
-"title": "The Lord of the Rings: The Fellowship of the Ring",
-"rating": 8.8,
-"genre": "Adventure"
-},
-{
-"id": 13,
-"title": "Interstellar",
-"rating": 8.6,
-"genre": "Sci-Fi"
-},
-{
-"id": 14,
-"title": "Goodfellas",
-"rating": 8.7,
-"genre": "Crime"
-},
-{
-"id": 15,
-"title": "The Empire Strikes Back",
-"rating": 8.7,
-"genre": "Sci-Fi"
-},
-{
-"id": 16,
-"title": "The Green Mile",
-"rating": 8.6,
-"genre": "Drama"
-},
-{
-"id": 17,
-"title": "The Lion King",
-"rating": 8.5,
-"genre": "Animation"
-},
-{
-"id": 18,
-"title": "The Prestige",
-"rating": 8.5,
-"genre": "Drama"
-},
-{
-"id": 19,
-"title": "Inglourious Basterds",
-"rating": 8.3,
-"genre": "Adventure"
-},
-{
-"id": 20,
-"title": "The Lord of the Rings: The Return of the King",
-"rating": 8.9,
-"genre": "Adventure"
-}
+    {
+      "id": 1,
+      "title": "The Shawshank Redemption",
+      "rating": 9.3,
+      "genre": "Drama"
+    },
+    {
+      "id": 2,
+      "title": "The Godfather",
+      "rating": 9.2,
+      "genre": "Crime"
+    },
+    {
+      "id": 3,
+      "title": "Pulp Fiction",
+      "rating": 8.9,
+      "genre": "Crime"
+    },
+    {
+      "id": 4,
+      "title": "The Dark Knight",
+      "rating": 9,
+      "genre": "Action"
+    },
+    {
+      "id": 5,
+      "title": "Forrest Gump",
+      "rating": 8.8,
+      "genre": "Drama"
+    },
+    {
+      "id": 6,
+      "title": "Inception",
+      "rating": 8.8,
+      "genre": "Sci-Fi"
+    },
+    {
+      "id": 7,
+      "title": "The Matrix",
+      "rating": 8.7,
+      "genre": "Sci-Fi"
+    },
+    {
+      "id": 8,
+      "title": "Avengers: Endgame",
+      "rating": 8.4,
+      "genre": "Action"
+    },
+    {
+      "id": 9,
+      "title": "The Godfather: Part II",
+      "rating": 9,
+      "genre": "Crime"
+    },
+    {
+      "id": 10,
+      "title": "Schindler's List",
+      "rating": 8.9,
+      "genre": "Drama"
+    },
+    {
+      "id": 11,
+      "title": "Fight Club",
+      "rating": 8.8,
+      "genre": "Drama"
+    },
+    {
+      "id": 12,
+      "title": "The Lord of the Rings: The Fellowship of the Ring",
+      "rating": 8.8,
+      "genre": "Adventure"
+    },
+    {
+      "id": 13,
+      "title": "Interstellar",
+      "rating": 8.6,
+      "genre": "Sci-Fi"
+    },
+    {
+      "id": 14,
+      "title": "Goodfellas",
+      "rating": 8.7,
+      "genre": "Crime"
+    },
+    {
+      "id": 15,
+      "title": "The Empire Strikes Back",
+      "rating": 8.7,
+      "genre": "Sci-Fi"
+    },
+    {
+      "id": 16,
+      "title": "The Green Mile",
+      "rating": 8.6,
+      "genre": "Drama"
+    },
+    {
+      "id": 17,
+      "title": "The Lion King",
+      "rating": 8.5,
+      "genre": "Animation"
+    },
+    {
+      "id": 18,
+      "title": "The Prestige",
+      "rating": 8.5,
+      "genre": "Drama"
+    },
+    {
+      "id": 19,
+      "title": "Inglourious Basterds",
+      "rating": 8.3,
+      "genre": "Adventure"
+    },
+    {
+      "id": 20,
+      "title": "The Lord of the Rings: The Return of the King",
+      "rating": 8.9,
+      "genre": "Adventure"
+    }
   ]
 }
