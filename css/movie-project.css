@@ -3,6 +3,10 @@
 body {
     font-family: Roboto, sans-serif;
 }
+.page-wrapper {
+    background: linear-gradient(to bottom, #0072C6 0%, #1D6EB9 30%, #C8102E 45%, #C8102E 100%);
+
+}
 
 .img-wrapper {
     max-height: 300px;
@@ -27,4 +31,38 @@ body {
     justify-content: center;
     align-items: center;
     max-width: 300px;
+}
+
+.main {
+    align-items: center;
+}
+
+#add-movie-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+#movie-list {
+    display: inline-grid;
+    grid-template-columns: auto auto auto auto;
+    background: linear-gradient(to bottom, #C8102E 0%, #C8102E 40%, #1D6EB9 50%, #0072C6 70%, #0072C6 100%);
+    padding: 10px;
+    min-width: 50px;
+}
+
+.movie {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 18px;
+    text-align: center;
+    margin: 5px;
+    transition: ease all 0.3s;
+}
+
+.movie:hover {
+    transform: scale(1.2);
+    background-color: gray;
 }
