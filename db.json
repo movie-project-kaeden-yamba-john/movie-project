@@ -1,7 +1,6 @@
 {
   "movies": [
     {
-
       "id": 1,
       "title": "The Shawshank Redemption",
       "rating": 9.3,
@@ -62,12 +61,6 @@
       "genre": "Drama"
     },
     {
-      "id": 11,
-      "title": "Fight Club",
-      "rating": 8.8,
-      "genre": "Drama"
-    },
-    {
       "id": 12,
       "title": "The Lord of the Rings: The Fellowship of the Ring",
       "rating": 8.8,
@@ -120,6 +113,12 @@
       "title": "The Lord of the Rings: The Return of the King",
       "rating": 8.9,
       "genre": "Adventure"
+    },
+    {
+      "title": "Bullet Train",
+      "rating": "9",
+      "genre": "Comedy, Action",
+      "id": 21
     }
   ]
 }
