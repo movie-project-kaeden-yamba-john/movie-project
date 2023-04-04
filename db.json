@@ -1,10 +1,17 @@
 {
   "movies": [
     {
-      "title": "Shrek",
-      "rating": "9",
-      "genre": "Comedy",
-      "id": 2
+
+      "id": 1,
+      "title": "The Shawshank Redemption",
+      "rating": 9.3,
+      "genre": "Drama"
+    },
+    {
+      "id": 2,
+      "title": "The Godfather",
+      "rating": 9.2,
+      "genre": "Crime"
     },
     {
       "id": 3,
@@ -113,12 +120,6 @@
       "title": "The Lord of the Rings: The Return of the King",
       "rating": 8.9,
       "genre": "Adventure"
-    },
-    {
-      "title": "The GodFather",
-      "rating": "9",
-      "genre": "Crime",
-      "id": 21
     }
   ]
 }
