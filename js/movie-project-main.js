@@ -1,22 +1,21 @@
 import * as movieMain from "./movie-project-functions.js";
-import {displayMovies} from "./movie-project-functions.js";
-import {addMovie} from "./movie-project-functions.js";
-import {removeMovie} from "./movie-project-functions.js";
-import {updateMovie} from "./movie-project-functions.js";
-import {displayMovie} from "./movie-project-functions.js";
 
 (async () => {
     // Pulls an array of movies, with each being objects, from  the TMDB Database;
     let tmdbMovieData = await movieMain.tmdbMovieData();
     console.log(tmdbMovieData)
-    let movieDataArray = await movieMain.getMovieArray();
-    console.log(movieDataArray)
-
+    let moviesArray = await movieMain.getMovieArray();
+    console.log(moviesArray)
+    const movieGrid = document.querySelector('#movieGrid')
+    moviesArray.forEach(function(movie){
+        movieMain.renderMovie(movie, movieGrid);
+    });
 })();
 const movieList = document.getElementById('movie-list');
 const addMovieForm = document.getElementById('add-movie-form');
 
-displayMovies()
+movieMain.displayMovies()
+
 // Add an event listener to the form to add a new movie
 addMovieForm.addEventListener('submit', event => {
     event.preventDefault();
@@ -49,4 +48,4 @@ movieList.addEventListener('click', event => {
     }
 });
 
-displayMovie()
+movieMain.displayMovie()
