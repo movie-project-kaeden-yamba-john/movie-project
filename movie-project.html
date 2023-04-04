@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="css/resets.css">
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/movie-project.css">
-
 </head>
 <body>
 <div class="page-wrapper">
@@ -27,13 +26,39 @@
                     <button type="submit">Add Movie</button>
                 </form>
 
-                <div id="movie-list"></div>
+                <div class="search-bar">
+                    <label for="search">Search:</label>
+                    <input type="text" id="search" name="search">
+                </div>
+
+                <h2>Movies</h2>
+                <ul id="movie-list"></ul>
             </div>
         </div>
         <div id="movieGrid" class="row align-center justify-center wrap">
             <div id="movieCard" class="row wrap">
             </div>
         </div>
+    </div>
+</div>
+
+<!-- Form to add a new movie -->
+<div id="add-movie-modal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <form id="new-movie-form">
+            <h3>Add Movie</h3>
+            <label for="new-title">Title:</label>
+            <input type="text" id="new-title" name="new-title">
+            <br>
+            <label for="new-rating">Rating:</label>
+            <input type="number" id="new-rating" name="new-rating">
+            <br>
+            <label for="new-genre">Genre:</label>
+            <input type="text" id="new-genre" name="new-genre">
+            <br>
+            <button type="submit">Save</button>
+        </form>
     </div>
 </div>
 

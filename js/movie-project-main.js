@@ -50,6 +50,7 @@
 //
 // movieMain.displayMovie()
 
+
 import { getMovies, addMovie, updateMovie, deleteMovie, searchMovies } from './movie-project-functions.js';
 
 const movieList = document.querySelector('#movie-list');
@@ -129,4 +130,6 @@ movieList.addEventListener('click', event => {
 (async () => {
     const movies = await getMovies();
     displayMovies(movies);
+
 })();
+
