@@ -22,6 +22,30 @@ export async function getMovieArray () {
     }
 }
 
+// Rendering Movies from TMDB Database
+export const renderMovie = (movie, parent) => {
+    const element = document.createElement('div');
+    element.classList.add(`movie-card`);
+    element.innerHTML = `
+    <div class="column">
+        <div class="img-wrapper">
+            <img src="https://image.tmdb.org/t/p/original/${movie.poster_path}" alt="movie poster" class="moviePoster">
+        </div>
+    </div>
+    <div class="column">
+         <div class="movie-info">
+            <h2>${movie.title}</h2>
+            <p>${movie.overview}</p>
+            <button>Delete Movie</button>
+        </div>
+    </div>
+    `;
+    document.getElementById('movieCard').appendChild(element)
+}
+
+// Call this after appending element to the parent
+
+
 // Function to display movies on the page
 export function displayMovies(movies) {
     movieList.innerHTML = '';
