@@ -56,17 +56,37 @@ export const deleteMovie = async (id) => {
     }
 };
 
-//function to search for a movie
-export const searchMovies = async (searchText) => {
-    try {
-        const response = await fetch(`http://localhost:3000/movies?q=${searchText}`);
-        const data = await response.json();
-        console.log('Movies:', data);
-        displayMovies(data);
-    } catch (error) {
-        console.error('Error searching movies:', error);
-    }
-};
+// Define the searchMovies function to fetch movies by title or genre
+// export const searchMovies = async (searchQuery, searchType) => {
+//     try {
+//         let url;
+//         if (searchType === 'title') {
+//             url = `http://localhost:3000/movies?title_like=${searchQuery}`;
+//         } else if (searchType === 'genre') {
+//             url = `http://localhost:3000/movies?genre=${searchQuery}`;
+//         }
+//         const response = await fetch(url);
+//         const data = await response.json();
+//         console.log('Movies found:', data);
+//         return data;
+//     } catch (error) {
+//         console.error('Error searching movies:', error);
+//     }
+// }
+
+let input = document.querySelector('#searchbar')
+input.addEventListener('keyup', filter)
+function filter() {
+    let inputQuery = document.querySelector('#searchbar').value.toLowerCase();
+    let filteredCoffees = [];
+    coffees.forEach(function (coffee) {
+        let name = coffee.name.toLowerCase();
+        if (name.includes(inputQuery))  {
+            filteredCoffees.push(coffee);
+        }
+    });
+    tbody.innerHTML = renderCoffees(filteredCoffees);
+}
 
 // Function to display all movies in the HTML page
 export const displayMovies = (movies) => {

@@ -1,5 +1,4 @@
 import { getMovies, addMovie, updateMovie, deleteMovie, searchMovies } from './movie-project-functions.js';
-
 const movieList = document.querySelector('#movie-list');
 const addMovieForm = document.querySelector('#add-movie-form');
 const searchForm = document.querySelector('#search-form');
@@ -54,6 +53,15 @@ const handleDeleteMovie = async (event) => {
         displayMovies(movies);
     }
 }
+//Function to handle search a movie
+const handleSearchMovies = async (event) => {
+    event.preventDefault();
+    const searchQuery = searchForm.elements.search.value;
+    const searchType = searchForm.elements.searchType.value;
+    const movies = await searchMovies(searchQuery, searchType);
+    displayMovies(movies);
+}
+
 
 // Add event listeners
 addMovieForm.addEventListener('submit', handleAddMovie);
