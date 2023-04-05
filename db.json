@@ -113,12 +113,6 @@
       "title": "The Lord of the Rings: The Return of the King",
       "rating": 8.9,
       "genre": "Adventure"
-    },
-    {
-      "title": "Bullet Train",
-      "rating": "9",
-      "genre": "Comedy, Action",
-      "id": 21
     }
   ]
 }
